@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-public class exercise9 {
+public class exercise10 {
     
-    //tell if a number is negative or not
+    //tell if a number is even or odd
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
@@ -11,13 +11,12 @@ public class exercise9 {
         System.out.println("Digite um numero: ");
         numero = sc.nextInt();
 
-        if (numero<0) {
-            System.out.println("NEGATIVO");
+        if (numero%2 == 0){
+            System.out.println("PAR");
         }
-        else {
-            System.out.println("NAO NEGATIVO");
+        else{
+            System.out.println("IMPAR");
         }
-
         sc.close();
     }
 }
