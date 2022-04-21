@@ -32,6 +32,7 @@ public class exercise7 {
 
         total = ((numeroPecas1*valorUnitario1) + (numeroPecas2*valorUnitario2));
 
+        System.out.println("Codigo peca 1: " + codigo1 + "\nCodigo peca 2: " + codigo2);
         System.out.printf("Valor a pagar: R$ %.2f\n", total);
 
         sc.close();
