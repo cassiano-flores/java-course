@@ -8,7 +8,7 @@ public class exercise16 {
         
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
-        double salario;
+        double salario, imposto;
 
         System.out.println("Digite o salario para saber o imposto a pagar: ");
         salario = sc.nextDouble();
@@ -20,16 +20,16 @@ public class exercise16 {
             System.out.println("Isento");
         }
         else if (salario <= 3000.00){
-            salario = (salario - 2000.00) * 0.08;
-            System.out.printf("R$ %.2f", salario);
+            imposto = (salario - 2000.00) * 0.08;
+            System.out.printf("R$ %.2f", imposto);
         }
         else if (salario <= 4500.00){
-            salario = ((salario - 2000.00 - 1000.00) * 0.18) + (1000.00 * 0.08);
+            imposto = ((salario - 2000.00 - 1000.00) * 0.18) + (1000.00 * 0.08);
             System.out.printf("R$ %.2f", salario);
         }
         else {
-            salario = ((salario - 2000.00 - 1000.00 - 1500) * 0.28) + (1000.00 * 0.08) + (1500.00 * 0.18);
-            System.out.printf("R$ %.2f", salario);
+            imposto = ((salario - 2000.00 - 1000.00 - 1500) * 0.28) + (1000.00 * 0.08) + (1500.00 * 0.18);
+            System.out.printf("R$ %.2f", imposto);
         }
 
         sc.close();
