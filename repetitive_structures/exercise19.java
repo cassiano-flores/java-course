@@ -1,3 +1,4 @@
+package repetitive_structures;
 import java.util.Scanner;
 
 public class exercise19 {

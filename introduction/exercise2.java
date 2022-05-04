@@ -1,3 +1,4 @@
+package introduction;
 import java.util.Locale;
 
 public class exercise2 {

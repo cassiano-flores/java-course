@@ -1,3 +1,4 @@
+package repetitive_structures;
 import java.util.Locale;
 import java.util.Scanner;
 

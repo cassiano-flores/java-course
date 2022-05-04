@@ -1,3 +1,4 @@
+package introduction;
 public class exercise1 {
     
     //first program in java ;)
