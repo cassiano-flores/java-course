@@ -28,11 +28,8 @@ public class exercise32 {
        y.b = sc.nextDouble();
        y.c = sc.nextDouble();
 
-       p1 = (x.a + x.b + x.c) / 2; // triangle area formulas
-       p2 = (y.a + y.b + y.c) / 2;
-
-       areaX = Math.sqrt(p1*(p1 - x.a)*(p1 - x.b)*(p1 - x.c)); // triangle area formulas
-       areaY = Math.sqrt(p2*(p2 - y.a)*(p2 - y.b)*(p2 - y.c));
+       areaX = x.area(); // triangle area formulas
+       areaY = y.area();
 
        if (areaX > areaY){
            larger = "X";
