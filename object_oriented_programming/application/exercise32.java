@@ -11,7 +11,7 @@ public class exercise32 {
     
        Locale.setDefault(Locale.US);
        Scanner sc = new Scanner(System.in);
-       double p1, p2, areaX, areaY;
+       double areaX, areaY;
        String larger;
 
        Triangle x, y;       // Triangle is a declared class in another package (entities), so we use this like int, double, etc.
