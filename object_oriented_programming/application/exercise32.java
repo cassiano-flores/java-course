@@ -15,8 +15,8 @@ public class exercise32 {
        String larger;
 
        Triangle x, y;       // Triangle is a declared class in another package (entities), so we use this like int, double, etc.
-       x = new Triangle();  // instantiate the object x
-       y = new Triangle();  // instantiate the object y
+       x = new Triangle();  // instantiate the object x (1st triangle)
+       y = new Triangle();  // instantiate the object y (2nd triangle)
 
        System.out.println("Digite as medidas do triangulo X: ");
        x.a = sc.nextDouble();    // inside the Triangle class, have three attributes: a, b, c, so we type the object (x) + " . " + the attribute (a) = (x.a)

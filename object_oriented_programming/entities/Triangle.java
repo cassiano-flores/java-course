@@ -1,4 +1,6 @@
 package object_oriented_programming.entities;
+
+//class triangle for exercise31 and exercise32
 public class Triangle {
 
     public double a;
