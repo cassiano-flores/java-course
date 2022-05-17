@@ -15,7 +15,7 @@ public class Exercise38 {
 
         int account;
         String name;
-        double balance = 0;
+        double initialDeposit = 0;
 
         System.out.print("Enter account number: ");
         account = sc.nextInt();
@@ -25,14 +25,14 @@ public class Exercise38 {
         name = sc.nextLine();
 
         System.out.print("Is there an initial deposit (y/n)? ");
-        String aux = sc.next();
-        if (aux.equals("y")){
+        char aux = sc.next().charAt(0);
+        if (aux == 'y'){
             
             System.out.print("Enter initial deposit value: ");
-            balance = sc.nextDouble();
+            initialDeposit = sc.nextDouble();
         }
 
-        BankAccount bankAccount = new BankAccount(account, name, balance);
+        BankAccount bankAccount = new BankAccount(account, name, initialDeposit);
 
         System.out.println("\nAccount data: \n" + bankAccount);
 
