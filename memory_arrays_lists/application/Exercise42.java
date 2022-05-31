@@ -2,7 +2,6 @@ package memory_arrays_lists.application;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 //first time studying Lists in Java
