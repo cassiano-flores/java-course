@@ -49,7 +49,7 @@ public class Exercise41 {
                 chooseRoom = sc.nextInt();
             }
 
-            Boolean opt = true;
+            boolean opt = true;
             while (opt == true){
 
                 if (room[chooseRoom] == null){
