@@ -19,7 +19,7 @@ public class Exercise45 {
 
         Date y1 = sdf1.parse("24/06/2001");                 //parse receive a SimpleDateFormat and returns a Date   
         Date y2 = sdf2.parse("24/06/2001 10:10:10");
-        Date y3 = Date.from(Instant.parse("2001-06-24T10:10:10Z"));  //instant a exactly time
+        Date y3 = Date.from(Instant.parse("2001-06-24T10:10:10Z"));  //instant a exactly time (ISO 8601 default, Z = GMT)
 
         //------------------------------------------------------------------------------------------------------------------------------
 
