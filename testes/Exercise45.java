@@ -68,5 +68,6 @@ public class Exercise45 {
 
         System.out.println("\nHour of the day: " + hour);
         System.out.println("Minutes of the day: " + minutes);
+        System.out.println("Actual month: " + month);
     }
 }
