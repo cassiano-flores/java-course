@@ -3,6 +3,7 @@ package testes;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.Instant;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.TimeZone;
 
@@ -52,5 +53,20 @@ public class Exercise45 {
         System.out.println("x1: " + sdf3.format(x1));    
         System.out.println("x2: " + sdf3.format(x2));
         System.out.println("x3: " + sdf3.format(x3));
+
+        //---------------------------------------------------------
+
+        Date d = new Date();
+        Calendar cal = Calendar.getInstance();  //"instantiate" a variable of Calendar type
+        cal.setTime(d);
+        //cal.add(Calendar.HOUR_OF_DAY, 4);
+        d = cal.getTime();  //get the time of cal
+
+        int minutes = cal.get(Calendar.MINUTE);
+        int hour = cal.get(Calendar.HOUR);
+        int month = 1 + cal.get(Calendar.MONTH);
+
+        System.out.println("\nHour of the day: " + hour);
+        System.out.println("Minutes of the day: " + minutes);
     }
 }
