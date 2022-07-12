@@ -4,6 +4,7 @@ import java.util.Date;
 
 import enumeration.entities.enums.OrderStatus;
 
+//class Order to Exercise46
 public class Order {
     
     private Integer id;
