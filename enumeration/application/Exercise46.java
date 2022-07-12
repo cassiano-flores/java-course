@@ -6,7 +6,7 @@ import enumeration.entities.Order;
 import enumeration.entities.enums.OrderStatus;
 
 //learning enum, different status of an Order
-public class Program {
+public class Exercise46 {
     
     public static void main(String[] args) {
         
