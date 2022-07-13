@@ -15,8 +15,9 @@ public class Worker {
     private Double baseSalary;
 
     //associations (composition)
-    private Department department;
+    private Department department;    //just one department ( 1 )
     private List<HourContract> contracts = new ArrayList<>();  //have to be instantiated in the declaration
+                                        //initialize like a List because these association is a HAVE-MANY
 
     //methods responsible for do or undo a CONTRACT ASSOCIATION
     //in the diagram UML (astah), these association is a HAVE-MANY ( * )
