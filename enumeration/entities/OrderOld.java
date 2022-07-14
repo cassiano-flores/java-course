@@ -5,16 +5,16 @@ import java.util.Date;
 import enumeration.entities.enums.OrderStatus;
 
 //class Order to Exercise46
-public class Order {
+public class OrderOld {
     
     private Integer id;
     private Date moment;
     private OrderStatus status;
 
-    public Order(){
+    public OrderOld(){
     }
 
-    public Order(Integer id, Date moment, OrderStatus status) {
+    public OrderOld(Integer id, Date moment, OrderStatus status) {
         this.id = id;
         this.moment = moment;
         this.status = status;
