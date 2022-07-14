@@ -28,7 +28,7 @@ public class Exercise48 {
 
             if (i==0){
                 sc.nextLine();   //consumes break line just in the first case
-            }   //we need to consume the break line whenever you have a sc.nextLine() and before a sc.nextInt()
+            }   //we need to consume the break line whenever you have a sc.nextLine() and before a sc.nextInt(), sc.nextDouble(), etc
                 //the break line must be between these scanners
 
             Date moment = sdf.parse(sc.nextLine());
