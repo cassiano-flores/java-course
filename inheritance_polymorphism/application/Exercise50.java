@@ -17,12 +17,14 @@ public class Exercise50 {
         //----------------------------------------------
 
         Account acc = new Account(1001, "Alex", 0.00);
+        System.out.println(acc);
         BusinessAccount bacc = new BusinessAccount(1002, "Maria", 0.00, 500.00);
 
         //UPCASTING (superclass receives a subclass object)
         //thats normal because the subclass is also an object from the superclass
 
         Account acc1 = bacc;
+        System.out.println(acc1);
         Account acc2 = new BusinessAccount(1003, "Bob", 0.00, 200.00); //Account -> BusinessAcount
         Account acc3 = new SavingsAccount(1004, "Anna", 0.00, 0.01); //Account -> SavingsAccount
 
@@ -45,7 +47,7 @@ public class Exercise50 {
         if (acc3 instanceof SavingsAccount){                    //this one
             SavingsAccount acc5 = (SavingsAccount) acc3;
             acc5.updateBalance();
-            System.out.println("Update!");
+            System.out.println("\nUpdate!");
         }
     }
 }
