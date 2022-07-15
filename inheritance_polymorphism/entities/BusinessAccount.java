@@ -17,7 +17,7 @@ public class BusinessAccount extends Account{
     public void withdraw(double amount) {
         super.withdraw(amount);
         balance = balance - 2.00;      //uses the same logic and adds an additional detail,
-                                       //discounting 2.00 more
+                                       //discounting $2.00 more
 
     }
 
