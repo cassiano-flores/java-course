@@ -8,6 +8,11 @@ public class SavingsAccount extends Account {
 
         balance = balance + (balance * interestRate);
     }
+    
+    @Override   //thats a superposition
+    public void withdraw(double amount) {
+        balance = balance - amount;        //just withdraw, without taxes
+    }
 
     public SavingsAccount() {
     }

@@ -10,7 +10,7 @@ public class Account {
 
     public void withdraw(double amount){
 
-        balance = balance - amount;
+        balance = balance - (amount + 5.00);  //withdraw have a $5.00 tax
     }
 
     public void deposit(double amount){
