@@ -8,6 +8,8 @@ import inheritance_polymorphism.entities.SavingsAccount;
 public class Exercise50 {
     
     public static void main(String[] args) {
+
+        //------ INHERITANCE TESTS -------
         
         BusinessAccount account = new BusinessAccount();
 
@@ -49,5 +51,18 @@ public class Exercise50 {
             acc5.updateBalance();
             System.out.println("\nUpdate!");
         }
+
+
+        //------ POLYMORPHISM TESTS -------
+
+        Account x = new Account(5555,"Cano", 1000.0);
+        Account y = new SavingsAccount(6000, "Castro", 1000.0, 0.01);
+        //Account and SavingsAccount have different ways methods called "overrides"
+
+        x.withdraw(50.0);  //when the withdraw method is called, "x" and "y" have the same type,
+        y.withdraw(50.0);  //but different instantiations, so we have two different results
+
+        System.out.println(x.getBalance());
+        System.out.println(y.getBalance());
     }
 }
