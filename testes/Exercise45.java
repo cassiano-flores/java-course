@@ -18,7 +18,7 @@ public class Exercise45 {
         SimpleDateFormat sdf3 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         sdf3.setTimeZone(TimeZone.getTimeZone("GMT"));     //set the time zone to GMT
 
-        Date y1 = sdf1.parse("24/06/2001");                 //parse receive a SimpleDateFormat and returns a Date   
+        Date y1 = sdf1.parse("24/06/2001");                 //parse receive a SimpleDateFormat(String) and returns a Date   
         Date y2 = sdf2.parse("24/06/2001 10:10:10");
         Date y3 = Date.from(Instant.parse("2001-06-24T10:10:10Z"));  //instant a exactly time (ISO 8601 default, Z = GMT)
 
@@ -69,5 +69,9 @@ public class Exercise45 {
         System.out.println("\nHour of the day: " + hour);
         System.out.println("Minutes of the day: " + minutes);
         System.out.println("Actual month: " + month);
+
+        //Order order = new Order(moment, OrderStatus.valueOf(status), client);  //uses "Class.valueOf" when is a enum type,
+        //and the client digit a String in the terminal
+
     }
 }
